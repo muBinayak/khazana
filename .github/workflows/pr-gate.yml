@@ -1,0 +1,19 @@
+name: PR Gate
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+permissions:
+  contents: read           # checkout
+  pull-requests: write     # dependency-review + Trivy + pgpverify + SpotBugs PR comments
+  security-events: write   # SARIF uploads to the Security tab
+
+jobs:
+  pr-gate:
+    # Sandbox ref (muBinayak org, holding the updated gate under test).
+    uses: muBinayak/kattu/.github/workflows/pr-gate.yml@esignet-343
+    with:
+      SERVICE_LOCATION: '.'
+      JAVA_SERVICE_LOCATION: './kernel'
+    secrets: inherit
