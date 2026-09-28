@@ -12,3 +12,5 @@ By default MOSIP provides 3 object store adapter implementation -
 
 ## License
 This project is licensed under the terms of [Mozilla Public License 2.0](LICENSE).
+
+<!-- fresh sandbox verification 2026-09-28T14:54:26Z -->
