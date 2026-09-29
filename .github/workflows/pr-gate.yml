@@ -8,8 +8,9 @@ on:
 
 permissions:
   contents: write          # checkout + commit the stack-detection cache on push
-  pull-requests: write     # dependency-review + Trivy + pgpverify + SpotBugs PR comments
+  pull-requests: write     # dependency-review + Trivy + pgpverify + SpotBugs PR review comments
   security-events: write   # SARIF uploads to the Security tab
+  checks: write            # reviewdog PR annotations on high-volume scanners (github-pr-check)
 
 jobs:
   pr-gate:
