@@ -1,0 +1,15 @@
+{
+  "detect": {
+    "has_java": "true",
+    "has_go": "false",
+    "has_npm": "false",
+    "has_android": "false",
+    "has_flutter": "false",
+    "java_location": "./kernel",
+    "go_location": ".",
+    "npm_location": ".",
+    "android_location": ".",
+    "flutter_location": "."
+  },
+  "images": []
+}
