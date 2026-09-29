@@ -3,9 +3,11 @@ name: PR Gate
 on:
   pull_request:
     types: [opened, reopened, synchronize]
+  push:
+    branches: [master]
 
 permissions:
-  contents: read           # checkout
+  contents: write          # checkout + commit the stack-detection cache on push
   pull-requests: write     # dependency-review + Trivy + pgpverify + SpotBugs PR comments
   security-events: write   # SARIF uploads to the Security tab
 
