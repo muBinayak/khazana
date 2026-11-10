@@ -1,4 +1,6 @@
 {
+  "source_sha": "5ccb4b95817ee878885125336ebbed61130a3be9",
+  "inputs_key": ".|./kernel||||",
   "detect": {
     "has_java": "true",
     "has_go": "false",
